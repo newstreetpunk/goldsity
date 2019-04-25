@@ -8,7 +8,11 @@
 body{
 	min-width: 320px;
 	overflow-x: hidden;
-	font-size: 16px;
+	font-size: 1.36vmax;
+	line-height: 2.13vmax;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	color: #000;
 }
 .container{
 	max-width: 1170px;
@@ -26,6 +30,8 @@ body{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	color: #fff;
+	z-index: 0;
 }
 .header:after{
 	content:'';
@@ -37,5 +43,36 @@ body{
 	top: 0;
 	background-color: #000;
 	opacity: .5;
+	z-index: -1;
+}
+.header-text{
+	min-height: 600px;
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 5.81vw;
+}
+.header-uptitle{
+	text-transform: uppercase;
+	margin-bottom: 1.7vmax;
+}
+.header-title{
+	text-transform: uppercase;
+	margin-bottom: 3.41vmax;
+	font-size: 4.27vmax;
+	font-weight: bold;
+	white-space: nowrap;	
+}
+.header-title span{
+	color: #ffcc02;
 }
 
