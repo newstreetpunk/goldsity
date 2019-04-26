@@ -380,6 +380,24 @@ section h2:after{
 	right: -10px;
 	bottom: -25px;
 }
+.img-block{
+	text-align: center;
+	border-bottom: 6px solid #ffcc02;
+	margin-top: 100px;
+}
+.img-block--small{
+	max-width: 800px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+.img-block img{
+	display: block;
+	margin: 0 auto;
+}
+.img-title{
+	text-align: center;
+	margin-top: 15px;
+}
 
 
 
