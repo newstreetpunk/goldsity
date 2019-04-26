@@ -486,7 +486,7 @@ h3{
 .kwiz-item-text{
 	border: 6px solid #ffcc02;
 	width: 50%;
-	padding: 45px 0;
+	padding: 45px 15px;
 	text-align: center;
 	z-index: -1;
 	margin-left: -6px;
@@ -521,9 +521,16 @@ h3{
 }
 @media (max-width: 767px){
 	.sect-site-title,
-	.sect-site{display: none;}
+	.sect-site,
+	.sect-site--kwiz{display: none;}
 }
 @media (max-width: 768px){
+	.kwiz-item-img{
+		width: 60%;
+	}
+	.kwiz-item-img img{
+		max-width: 100%;
+	}
 	.after-item{
 		width: 50%;
 	}
