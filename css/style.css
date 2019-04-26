@@ -243,6 +243,25 @@ section h2:after{
 	.after-item{
 		width: 50%;
 	}
+	.features-block-item:nth-child(even){
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+		margin-left: 0;
+	}
+	.features-block-item:nth-child(even) .features-block-item-text{
+		text-align: right;
+		margin-left: 0;
+		margin-right: 30px;
+	}
+	.features-block{
+		background-position: top right 180px;
+	}
+	.features-block-item{
+		width: 65%;
+	}
 }
 
 @media (max-width: 580px){
@@ -251,5 +270,20 @@ section h2:after{
 	}
 	.after-text-block b{
 		margin-top: 10px;
+	}
+	.features-block{
+		background-position: top right -50px;
+	}
+	.features-block-item{
+		width: 90%;
+	}
+	.features .container{
+		padding-right: 0;
+	}
+	.features-block-item-text{width: 100%;}
+	.features-block{
+		height: 650px;
+		-webkit-background-size: contain;
+		background-size: contain;
 	}
 }
