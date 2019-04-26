@@ -328,6 +328,58 @@ section h2:after{
 	color: #ffcc02;
 	z-index: -1;
 }
+.pages-row{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.pages-text{width: 50%;}
+.pages-text p{
+	margin-bottom: 15px;
+	padding-left: 5.81vw
+}
+.pages-text p span{color: #ffcc02;}
+.pages-test{
+	background-color: #fff;
+  border-width: 2px;
+  border-color: rgb( 255, 204, 2 );
+  border-style: solid;
+  box-shadow: 3.064px 2.571px 29px 0px rgb( 0, 0, 0, .2 );
+  padding: 60px 80px;
+  position: relative;
+}
+.pages-test:after,
+.pages-test:before{
+	content: '';
+	display: block;
+	position: absolute;
+	background-image: url(../img/quotes.png);
+	width: 87px;
+	height: 61px;
+
+}
+.pages-test:after{
+	top: -25px;
+	left: -10px;
+}
+.pages-test:before{
+	-webkit-transform: rotateZ(180deg);
+	-ms-transform: rotateZ(180deg);
+	-o-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+	right: -10px;
+	bottom: -25px;
+}
 
 
 
@@ -383,6 +435,16 @@ section h2:after{
 		padding-left: 0;
 	}
 	.as-text{width: 100%;}
+	.pages-text{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.pages-row{
+		justify-content: center;
+	}
+	.pages-test{
+		padding: 50px 60px;
+	}
 }
 
 @media (max-width: 580px){
