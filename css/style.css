@@ -526,7 +526,7 @@ h3{
 }
 .start-row h5{
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 1.36vmax;
 	margin-bottom: 20px;
 }
 .start-row li{
@@ -572,6 +572,7 @@ h3{
 	}
 	.sect-site-item{width: 56.5%;}
 	.sect-site-item span{z-index: -1;}
+	.start-row ul{margin-bottom: 30px;}
 }
 @media (max-width: 767px){
 	.sect-site-title,
@@ -579,6 +580,7 @@ h3{
 	.sect-site--kwiz{display: none;}
 }
 @media (max-width: 768px){
+	.start-row{width: 100%;justify-content: center;}
 	.kwiz-item-img{
 		width: 60%;
 	}
