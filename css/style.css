@@ -599,6 +599,22 @@ h3{
 .optimization-row--two img{
 	padding: 0 5.81vmax;
 }
+.video{
+	position: relative;
+}
+.video img{
+	position: absolute;
+	right: -100px;
+	top: -20px;
+}
+.video-text-block{
+	border: 4px solid #ffcc02;
+	padding: 5.81vmax;
+	max-width: 865px;
+	margin-left: -5.81vmax;
+}
+.video-text-block p{max-width: 555px;}
+.video-text-block p:first-child{margin-bottom: 2.1vmax;}
 
 
 
