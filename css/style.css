@@ -585,7 +585,20 @@ h3{
 	left: 50%;
 	margin-left: -23px;
 }
-
+.optimization-text-block{
+	flex:1;
+}
+.optimization-text-block p{
+	margin-bottom: 30px;
+}
+.optimization-text-block p span{color: #ffcc02;font-weight: bold;}
+.optimization-row--two{
+	-ms-align-items: center;
+	align-items: center;
+}
+.optimization-row--two img{
+	padding: 0 5.81vmax;
+}
 
 
 
@@ -663,6 +676,10 @@ h3{
 }
 
 @media (max-width: 580px){
+	.optimization-text-block{width: 100%;flex:auto;}
+	.optimization-text-block p{padding-left: 0;margin-bottom: 15px;}
+	.optimization-row--two{justify-content: center;}
+	.optimization-row--two img{max-width: 80%;margin-bottom: 30px;}
 	.optimization-item{width: 100%;margin-bottom: 30px;}
 	.after-item{
 		width: 90%;
