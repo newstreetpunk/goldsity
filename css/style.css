@@ -17,6 +17,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
 	color: #000;
+	overflow-x: hidden;
 }
 .container{
 	max-width: 1170px;
@@ -615,6 +616,78 @@ h3{
 }
 .video-text-block p{max-width: 555px;}
 .video-text-block p:first-child{margin-bottom: 2.1vmax;}
+.video-items{margin-top: 50px;}
+.video-item{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.video-item:nth-child(even){
+	-webkit-flex-direction: row-reverse;
+	-moz-flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	-o-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+.video-item:nth-child(even) p{
+	margin-left: 0;
+	margin-right: -34px;
+	text-align: right;
+}
+.video-item span{
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+	background-color: #ffcc02;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 68px;
+	position: relative;
+}
+.video-item p{
+	background-color: #f4f4f4;
+	padding: 40px 66px;
+	min-height: 120px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-left: -34px;
+}
+.video-text{
+	margin: 50px 0 0;
+	display: block;
+}
+.footer{
+	padding-bottom: 70px;
+}
+.footer a{
+	font-weight: bold;
+	color: #ffcc02;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.footer a:hover{text-decoration: none;}
+.footer-wrap{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+}
 
 
 
@@ -657,7 +730,7 @@ h3{
 	.video-text-block{
 		max-width: 100%;
 		margin-left: 0;
-		margin-top: -80px;
+		margin-top: -70px;
 	}
 	.video-text-block p{max-width: 100%;}
 	.video-img-block{
@@ -759,4 +832,5 @@ h3{
 		top: 99%;
 	}
 	.as-item .count{right: 0;}
+	.video-text-block{margin-top: -50px;}
 }
