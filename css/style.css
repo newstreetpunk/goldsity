@@ -12,15 +12,15 @@ img{
 body{
 	min-width: 320px;
 	overflow-x: hidden;
-	font-size: 0.83vmax;
-	line-height: 1.3vmax;
+	font-size: 16px;
+	line-height: 1.3;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
 	color: #000;
 	overflow-x: hidden;
 }
 .container{
-	max-width: 60.9vmax;
+	max-width: 1170px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
@@ -66,11 +66,11 @@ body{
 }
 .header-uptitle{
 	text-transform: uppercase;
-	margin-bottom: 1.7vmax;
+	font-size: 21px;
 }
 .header-title{
 	text-transform: uppercase;
-	margin-bottom: 3.41vmax;
+	margin-bottom: 20px;
 	font-size: 2.6vmax;
 	font-weight: bold;
 	white-space: nowrap;	
@@ -82,10 +82,10 @@ section{
 	padding: 2.86vmax 0 4.42vmax;
 }
 section h2{
-	line-height: 5.2vw;
+	line-height: 80px;
 	padding-left: 2.8vw;
 	position: relative;
-	font-size: 1.15vmax;
+	font-size: 22px;
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 3.64vmax;
@@ -530,11 +530,13 @@ h3{
 .start-row h5{
 	font-weight: normal;
 	margin-bottom: 20px;
+	font-size: 16px;
 }
 .start-row li{
 	list-style: none;
 	padding-left: 20px;
 	position: relative;
+	padding-bottom: 10px;
 }
 .start-row li:after{
 	content: '';
@@ -545,8 +547,7 @@ h3{
 	border-radius: 50%;
 	position: absolute;
 	left: 0;
-	top: 50%;
-	margin-top: -4px;
+	top: 6px;
 }
 .start-img{
 	-webkit-box-shadow: 0px 0px 73px 26px rgba( 0, 0, 0,.1 );
@@ -571,8 +572,8 @@ h3{
 }
 .optimization-item{
 	background-color: #ffcc02;
-	width: 360px;
-	padding: 50px 0px 20px 15px;
+	width: 32%;
+	padding: 50px 15px 20px 15px;
 	position: relative;
 }
 .optimization-item:after{
@@ -702,6 +703,7 @@ h3{
 }
 
 @media (max-width: 1200px){
+	.as .subtitle{margin-top: -5vmax;}
 	.video-row .container{
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -730,6 +732,7 @@ h3{
 		top: 0;
 		text-align: center;
 	}
+	.setting-item .count{left: -25px;}
 }
 
 @media (max-width: 992px){
@@ -821,7 +824,7 @@ h3{
 		width: 65%;
 	}
 	.as .subtitle{
-		margin-top: -35px;
+		margin-top: -15px;
 		padding-left: 0;
 	}
 	.as-text{width: 100%;}
@@ -845,6 +848,7 @@ h3{
 	.footer-img{margin-bottom: 30px;}
 	.video-row .container{padding: 0;}
 	.video-text-block{border-left: 0;border-right: 0;}
+	section h2{font-size: 18px;}
 }
 
 @media (max-width: 580px){
