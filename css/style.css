@@ -71,7 +71,7 @@ body{
 .header-title{
 	text-transform: uppercase;
 	margin-bottom: 20px;
-	font-size: 2.6vmax;
+	font-size: 40px;
 	font-weight: bold;
 	white-space: nowrap;	
 }
@@ -82,13 +82,20 @@ section{
 	padding: 2.86vmax 0 4.42vmax;
 }
 section h2{
-	line-height: 80px;
-	padding-left: 2.8vw;
+	min-height: 80px;
+	padding-left: 30px;
 	position: relative;
 	font-size: 22px;
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 3.64vmax;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
 }
 section h2:after{
 	content: '';
@@ -688,7 +695,7 @@ h3{
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 
@@ -852,6 +859,7 @@ h3{
 }
 
 @media (max-width: 580px){
+	.header-title{font-size: 28px;}
 	.optimization-text-block{width: 100%;flex:auto;}
 	.optimization-text-block p{padding-left: 0;margin-bottom: 15px;}
 	.optimization-row--two{justify-content: center;}
@@ -864,17 +872,19 @@ h3{
 		margin-top: 10px;
 	}
 	.features-block{
-		background-position: top right -50px;
+		background-position: top right -65px;
 	}
+	.features-block-list{padding: 0;height: 100%;justify-content: flex-start;}
 	.features-block-item{
 		width: 100%;
+		margin-bottom: 50px;
 	}
 	.features .container{
 		padding-right: 0;
 	}
 	.features-block-item-text{width: 100%;}
 	.features-block{
-		height: 650px;
+		height: 750px;
 		-webkit-background-size: contain;
 		background-size: contain;
 	}
