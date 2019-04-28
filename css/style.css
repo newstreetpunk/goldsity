@@ -380,7 +380,6 @@ body{
 }
 .header{
 	position: relative;
-	height: 600px;
 	width: 100%;
 	background-image: url(../img/header-bg.jpg);
 	-webkit-background-size: cover;
@@ -403,7 +402,7 @@ body{
 	z-index: -1;
 }
 .header-text{
-	min-height: 600px;
+	height: 31.25vmax;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
