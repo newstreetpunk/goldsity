@@ -8,7 +8,6 @@
 img{
 	max-width: 100%;
 	height: auto;
-	display: block;
 }
 body{
 	min-width: 320px;
@@ -602,10 +601,11 @@ h3{
 .video{
 	position: relative;
 }
-.video img{
+.video-img-block{
 	position: absolute;
 	right: -100px;
 	top: -20px;
+	width: 61%;
 }
 .video-text-block{
 	border: 4px solid #ffcc02;
@@ -638,6 +638,35 @@ h3{
 	.sect-site-item span{z-index: -1;}
 	.start-row ul{margin-bottom: 30px;}
 	.optimization-item{width: 31%;font-size: 14px;line-height: 1.3;}
+	.video-row{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		min-height: 600px;
+	}
+	.video-text-block{
+		max-width: 100%;
+		margin-left: 0;
+		margin-top: -80px;
+	}
+	.video-text-block p{max-width: 100%;}
+	.video-img-block{
+		position: relative;
+		width: 100%;
+		right: auto;
+		top: 0;
+		text-align: center;
+	}
 }
 @media (max-width: 767px){
 	.sect-site-title,
