@@ -1,5 +1,13 @@
 $(function(){
 
+		/*$(window).resize(function(){
+			if($(this).width() < 992) {
+				$('br').css('display', 'none');
+			} else{
+				$('br').css('display', 'block');
+			}
+		});*/
+
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > $(window).height()) {
 			$('.all-cases').addClass("active");
