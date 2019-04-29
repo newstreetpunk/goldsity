@@ -809,9 +809,10 @@ h3{
 	.setting-item .count{left: -25px;}
 	.video-text br{display: none;}
 }
-
-@media (max-width: 992px){
+@media (max-width: 1040px){
 	br{display: none;}
+}
+@media (max-width: 992px){
 	.video-item p{width: 90%;}
 	.as-block{
 		justify-content: center;
@@ -826,6 +827,16 @@ h3{
 	.sect-site-item span{z-index: -1;}
 	.start-row ul{margin-bottom: 30px;}
 	.optimization-item{width: 31%;}
+	.pages-text{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.pages-row{
+		justify-content: center;
+	}
+	.pages-test{
+		padding: 50px 60px;
+	}
 	.footer-wrap{-webkit-flex-direction: column;
 	-moz-flex-direction: column;
 	-ms-flex-direction: column;
@@ -913,16 +924,6 @@ h3{
 		padding-left: 0;
 	}
 	.as-text{width: 100%;}
-	.pages-text{
-		width: 100%;
-		margin-bottom: 30px;
-	}
-	.pages-row{
-		justify-content: center;
-	}
-	.pages-test{
-		padding: 50px 60px;
-	}
 	.video-row .container{padding: 0;}
 	.video-text-block{border-left: 0;border-right: 0;}
 	section h2{font-size: 18px;}
